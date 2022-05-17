@@ -1,0 +1,5 @@
+.top-title {
+  @include font(36px, 1.16, null, 0.03em);
+  text-align: center;
+  color: var(--header-color);
+}
