@@ -3,14 +3,10 @@
     display: none;
   }
   @media screen and (min-width: 1200px) {
-    // padding-top: 94px;
     padding-bottom: 94px;
   }
 }
 
-.about-title {
-  margin-bottom: 50px;
-}
 .about-list {
   display: flex;
   justify-content: space-between;

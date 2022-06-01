@@ -61,7 +61,7 @@ body {
 }
 
 .top-title {
-  font-size: 33px;
+  font-size: 28px;
   line-height: 1.18;
   letter-spacing: 0.03em;
   text-align: center;
@@ -177,9 +177,18 @@ body {
 
 .header {
   background-color: #fff;
-  padding-top: 24px;
-  padding-bottom: 25px;
-  border-bottom: 1px solid #ececec;
+  padding: 16px 0;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    padding: 21px 0;
+    border-bottom: 1px solid #ececec;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header {
+    padding: 24px 0;
+  }
 }
 
 .header-container {
@@ -211,16 +220,19 @@ body {
   color: #212121;
 }
 
-.mob-menu-top {
+.menu-top {
   display: none;
 }
 @media screen and (min-width: 768px) {
-  .mob-menu-top {
+  .menu-top {
     display: block;
   }
 }
 
 .mob-menu-btn {
+  position: absolute;
+  right: 10px;
+  top: 5px;
   display: block;
   margin-left: auto;
   background-color: transparent;
@@ -230,6 +242,11 @@ body {
 .mob-menu-btn :focus {
   fill: var(--accent-color);
 }
+@media screen and (min-width: 768px) {
+  .mob-menu-btn {
+    display: none;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .header-list {
@@ -237,6 +254,9 @@ body {
   }
 }
 
+.menu-list {
+  display: none;
+}
 @media screen and (min-width: 768px) {
   .menu-list {
     display: flex;
@@ -255,16 +275,29 @@ body {
   letter-spacing: 0.02em;
   color: var(--header-color);
   transition: color var(--time-cubic);
-  padding: 32px 0px;
+  padding: 34px 0;
 }
 .menu-list__link:hover, .menu-list__link:focus {
   color: var(--accent-color);
 }
+@media screen and (min-width: 1200px) {
+  .menu-list__link {
+    padding: 30px 0;
+  }
+}
 
+.connect {
+  display: none;
+}
 @media screen and (min-width: 768px) {
   .connect {
     margin-left: auto;
     display: flex;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .connect {
+    flex-direction: column;
   }
 }
 
@@ -283,23 +316,38 @@ body {
 }
 
 .connect__mail {
-  margin-right: 50px;
   display: block;
+}
+@media screen and (max-width: 1199px) {
+  .connect__mail {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .connect__mail {
+    margin-right: 50px;
+  }
 }
 
 .connect__tel {
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.17;
   font-weight: 500;
   letter-spacing: 0.02em;
   color: #757575;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   transition: color var(--time-cubic);
 }
 .connect__tel:focus, .connect__tel:hover {
   color: var(--accent-color);
+}
+@media screen and (min-width: 1200px) {
+  .connect__tel {
+    font-size: 14px;
+    line-height: 1.14;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .connect__icon {
@@ -309,16 +357,37 @@ body {
 }
 .connect__icon .header-tel:focus, .header-tel:hover .connect__icon {
   fill: var(--accent-color);
+  width: 16px;
+  height: 12px;
+}
+
+@media screen and (min-width: 1200px) {
+  .icon-mail {
+    width: 16px;
+    height: 12px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .icon-tel {
+    height: 16px;
+  }
 }
 
 .mob-menu {
   position: fixed;
+  z-index: 1;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
   background-color: #ffffff;
   overflow-y: auto;
+  transform: translateY(-100%);
+  transition: transform var(--time-cubic);
+}
+.mob-menu.is-open {
+  transform: translateY(0);
 }
 .mob-menu .container {
   display: flex;
@@ -344,7 +413,7 @@ body {
 .mob-menu-list {
   padding: 0px 40px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .mob-menu-list {
     padding: 0;
   }
@@ -355,9 +424,9 @@ body {
 }
 
 .mob-menu-list__link {
-  font-weight: 500;
   font-size: 40px;
   line-height: 1.18;
+  font-weight: 500;
   letter-spacing: 0.02em;
   color: #212121;
 }
@@ -370,7 +439,7 @@ body {
   margin-left: 40px;
   margin-top: 48px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .mob-conteiner-bottom {
     margin-left: 0;
   }
@@ -381,19 +450,24 @@ body {
 }
 
 .mob-connect__tel {
-  font-weight: 500;
   font-size: 34px;
   line-height: 1.18;
-  letter-spacing: 0.002em;
+  font-weight: 500;
+  letter-spacing: 0.02em;
   color: #2196f3;
   margin-bottom: 32px;
   display: inline-block;
 }
+@media screen and (max-width: 350px) {
+  .mob-connect__tel {
+    font-size: 9vw;
+  }
+}
 
 .mob-connect__mail {
-  font-weight: 500;
   font-size: 24px;
   line-height: 1.17;
+  font-weight: 500;
   letter-spacing: 0.02em;
   color: #757575;
   display: block;
@@ -417,12 +491,21 @@ body {
 }
 
 .mob-soc-link {
-  font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
+  font-weight: 500;
   letter-spacing: 0.02em;
   color: #2196f3;
   display: block;
+}
+@media screen and (max-width: 479px) {
+  .mob-soc-link {
+    font-size: 4vw;
+  }
+}
+
+.no-scroll {
+  overflow: hidden;
 }
 
 .hero {
@@ -574,10 +657,6 @@ body {
   .about {
     padding-bottom: 94px;
   }
-}
-
-.about-title {
-  margin-bottom: 50px;
 }
 
 .about-list {
@@ -800,7 +879,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .footer-logo {
-    margin-left: 115px;
+    margin-left: 100px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -817,12 +896,13 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: center;
     height: 79px;
   }
 }
 @media screen and (min-width: 768px) {
   .footer-list {
-    margin-left: 76px;
+    margin-left: 61px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -874,7 +954,7 @@ body {
 @media screen and (min-width: 768px) {
   .footer-box {
     display: inline-block;
-    margin: 65px 0 0 165px;
+    margin-left: 165px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1035,8 +1115,8 @@ body {
 
 .modal {
   position: absolute;
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scaleY(1);
@@ -1046,6 +1126,24 @@ body {
   padding: 40px;
   box-sizing: border-box;
   transition: transform var(--time-cubic);
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .modal {
+    width: 95%;
+    height: 85%;
+    overflow: auto;
+  }
+}
+@media screen and (max-width: 369px) {
+  .modal {
+    padding: 30px 20px;
+  }
 }
 
 .modal-cloce {
@@ -1085,7 +1183,7 @@ body {
 
 .modal-title {
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   letter-spacing: 0.03em;
   text-align: center;
   color: #212121;
@@ -1138,11 +1236,24 @@ body {
 .modal-textarea:hover, .modal-textarea:focus {
   border-color: var(--accent-color);
 }
-
 .modal-agreement {
   margin-bottom: 30px;
+  display: block;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 1200px) {
+  .modal-agreement {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 470px) {
+  .modal-agreement {
+    justify-content: center;
+  }
 }
 
 .modal-checkbox-border {
@@ -1152,7 +1263,7 @@ body {
   border-radius: 3px;
   box-sizing: border-box;
   display: inline-block;
-  margin: 0px 8px;
+  margin: 0 6px 0 0;
   transition: border var(--time-cubic), background var(--time-cubic);
 }
 .modal-checkbox:checked + .modal-checkbox-border {
@@ -1170,26 +1281,53 @@ body {
 }
 
 .modal-checkbox-text {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   font-style: normal;
   display: inline-block;
   color: #757575;
 }
+@media screen and (min-width: 1200px) {
+  .modal-checkbox-text {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
 
 .modal-checkbox-treaty {
-  font-size: 14px;
-  line-height: 1.71;
+  margin-left: 4px;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-decoration-line: underline;
-  margin-left: 4px;
   color: var(--accent-color);
+}
+@media screen and (max-width: 469px) {
+  .modal-checkbox-treaty {
+    margin-top: 8px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal-checkbox-treaty {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
+
+.no-scroll {
+  overflow: hidden;
 }
 
 .portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .container-btm {
@@ -1220,16 +1358,25 @@ body {
   margin-bottom: 15px;
 }
 
+.item-btm:nth-child(n+3) {
+  margin-bottom: 0;
+}
+@media screen and (max-width: 399px) {
+  .item-btm:nth-child(n+3) {
+    margin-bottom: 15px;
+  }
+}
+
 .portfolio-list {
   flex-wrap: wrap;
   display: flex;
 }
+
 @media screen and (max-width: 767px) {
-  .portfolio-list {
+  .portfolio-cards {
     justify-content: center;
   }
 }
-
 @media screen and (min-width: 768px) {
   .portfolio-cards {
     margin-left: -30px;
@@ -1252,6 +1399,17 @@ body {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .portfolio-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 676px) {
+  .portfolio-item {
+    width: 450px;
+  }
+}
 @media screen and (min-width: 768px) {
   .portfolio-item {
     width: 354px;
@@ -1259,7 +1417,9 @@ body {
 }
 
 .portfolio-item-link {
-  display: block;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
   transition: box-shadow var(--time-cubic);
 }
 .portfolio-item-link:focus, .portfolio-item-link:hover {
@@ -1272,25 +1432,43 @@ body {
   overflow: hidden;
 }
 
+.portfolio-img {
+  max-width: 100%;
+}
+
 .portfolio-text-card {
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
   position: absolute;
-  width: 322px;
+  height: 100%;
   top: 0%;
-  padding: 63px 24px;
+  padding: 24px 24px 63px;
   background: var(--accent-color);
   color: #ffffff;
-  top: 0%;
-  transform: translateY(100%);
+  transform: translateY(120%);
   transition: transform var(--time-cubic);
 }
 .portfolio-text-card .portfolio-item-link:focus, .portfolio-item-link:hover .portfolio-text-card {
   transform: translateY(0%);
 }
+@media screen and (max-width: 399px) {
+  .portfolio-text-card {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
+}
+@media screen and (min-width: 455px) {
+  .portfolio-text-card {
+    padding: 63px 24px;
+  }
+}
 
 .card-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
   padding: 20px 24px;
   border: 1px solid #eeeeee;
 }

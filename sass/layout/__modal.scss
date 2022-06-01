@@ -1,7 +1,11 @@
 .modal {
   position: absolute;
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    height: 581px;
+  }
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scaleY(1);
@@ -12,6 +16,14 @@
   padding: 40px;
   box-sizing: border-box;
   transition: transform var(--time-cubic);
+  @media screen and (max-width: 479px) {
+    width: 95%;
+    height: 85%;
+    overflow: auto;
+  }
+  @media screen and (max-width: 369px) {
+    padding: 30px 20px;
+  }
 }
 
 .modal-cloce {
@@ -51,7 +63,7 @@
 }
 
 .modal-title {
-  @include font(20px, 1.15, null, 0.03em);
+  @include font(20px, 1.5, null, 0.03em);
   text-align: center;
   color: #212121;
   margin-bottom: 12px;
@@ -102,12 +114,25 @@
   &:focus {
     border-color: var(--accent-color);
   }
+  @media screen and (max-width: 479px) {
+    // height: 60px;
+  }
 }
 
 .modal-agreement {
   margin-bottom: 30px;
+  display: block;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 470px) {
+    justify-content: center;
+  }
 }
 
 .modal-checkbox-border {
@@ -117,7 +142,7 @@
   border-radius: 3px;
   box-sizing: border-box;
   display: inline-block;
-  margin: 0px 8px;
+  margin: 0 6px 0 0;
   transition: border var(--time-cubic), background var(--time-cubic);
   .modal-checkbox:checked + & {
     border-color: var(--accent-color);
@@ -135,15 +160,31 @@
 }
 
 .modal-checkbox-text {
-  @include font(14px, 1.71, null, 0.03em);
+  @include font(12px, 1.17, null, 0.03em);
+  @media screen and (max-width: 419px) {
+  }
+  @media screen and (min-width: 1200px) {
+    @include font(14px, 1.71, null, null);
+  }
   font-style: normal;
   display: inline-block;
   color: #757575;
 }
 
 .modal-checkbox-treaty {
-  @include font(14px, 1.71, null, 0.03em);
-  text-decoration-line: underline;
   margin-left: 4px;
+  @include font(12px, 1.17, null, 0.03em);
+  @media screen and (max-width: 469px) {
+    margin-top: 8px;
+  }
+  @media screen and (min-width: 1200px) {
+    @include font(14px, 1.71, null, null);
+  }
+  text-decoration-line: underline;
+  // margin-left: 4px;
   color: var(--accent-color);
+}
+
+.no-scroll {
+  overflow: hidden;
 }
