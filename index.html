@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,18 +22,17 @@
     <header class="header">
       <div class="container header-container">
         <nav class="navigation">
-              <a href="./index.html" class="logo link">
-          Web<span class="logo-accent">Studio</span></a
-        >
-        <button type="button" class="mob-menu-btn">
-          <svg class="modal-icon-cloce" width="40" height="40">
-            <use
-              href="./images/icons.svg/symbol-defs-omg.svg#icon-menu_40px"
-            ></use>
-          </svg>
-        </button>
-        <div class="menu-top">
-          
+          <a href="./index.html" class="logo link">
+            Web<span class="logo-accent">Studio</span></a
+          >
+          <button type="button" class="mob-menu-btn">
+            <svg class="modal-icon-cloce" width="40" height="40">
+              <use
+                href="./images/icons.svg/symbol-defs-omg.svg#icon-menu_40px"
+              ></use>
+            </svg>
+          </button>
+          <div class="menu-top">
             <ul class="menu-list header-list list">
               <li class="menu-list__item">
                 <a href="./index.html" class="menu-list__link link current"
@@ -50,30 +48,30 @@
                 <a href="./index.html" class="menu-list__link link">Контакты</a>
               </li>
             </ul>
-        </nav>
-          <div class="connect">
-            <a
-              class="connect__tel link connect__mail"
-              href="mailto:info@devstudio.com"
-            >
-              <svg class="connect__icon" width="16" height="12">
-                <use
-                  href="./images/icons.svg/symbol-defs-omg.svg#icon-envelope"
-                ></use></svg
-              >info@devstudio.com
-            </a>
-            <a class="connect__tel link" href="tel:+380961111111">
-              <svg class="connect__icon" width="10" height="16">
-                <use
-                  href="./images/icons.svg/symbol-defs-omg.svg#icon-smartphone"
-                ></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
           </div>
+        </nav>
+        <div class="connect">
+          <a
+            class="connect__tel link connect__mail"
+            href="mailto:info@devstudio.com"
+          >
+            <svg class="connect__icon" width="16" height="12">
+              <use
+                href="./images/icons.svg/symbol-defs-omg.svg#icon-envelope"
+              ></use></svg
+            >info@devstudio.com
+          </a>
+          <a class="connect__tel link" href="tel:+380961111111">
+            <svg class="connect__icon" width="10" height="16">
+              <use
+                href="./images/icons.svg/symbol-defs-omg.svg#icon-smartphone"
+              ></use>
+            </svg>
+            +38 096 111 11 11
+          </a>
         </div>
       </div>
-      <div class="mob-menu is-hidden ">
+      <div class="mob-menu is-hidden">
         <button type="button" class="mob-close-btn">
           <svg class="modal-icon-cloce" width="40" height="40">
             <use
@@ -135,7 +133,7 @@
       </div>
     </header>
     <main>
-      <!-- hero-- -->
+      <!-- hero -->
       <section class="hero hero-box">
         <div class="container hero-container">
           <h1 class="hero-container__title">
@@ -217,9 +215,7 @@
           <ul class="about-list list">
             <li class="about-list__item">
               <img
-              srcset="
-              ./images/img.jpg 1x, 
-              ./images/img-2x.jpg 2x"
+                srcset="./images/img.jpg 1x, ./images/img-2x.jpg 2x"
                 src="./images/img.jpg"
                 alt="картинка 1"
                 width="370"
@@ -230,11 +226,8 @@
               </div>
             </li>
             <li class="about-list__item">
-              
               <img
-                srcset="
-              ./images/img1.jpg 1x, 
-              ./images/img1-2x.jpg 2x"
+                srcset="./images/img1.jpg 1x, ./images/img1-2x.jpg 2x"
                 src="./images/img1.jpg"
                 alt="картинка 2"
                 width="370"
@@ -246,9 +239,7 @@
             </li>
             <li class="about-list__item">
               <img
-                srcset="
-              ./images/img2.jpg 1x, 
-              ./images/img2-2x.jpg 2x"
+                srcset="./images/img2.jpg 1x, ./images/img2-2x.jpg 2x"
                 src="./images/img2.jpg"
                 alt="картинка 3"
                 width="370"
@@ -268,25 +259,22 @@
           <ul class="team-list list">
             <li class="team-item">
               <picture class="picture">
-                <source 
-                  srcset="./images/img3.jpg 1x, 
-                  ./images/img3-2x.jpg 2x"
+                <source
+                  srcset="./images/img3.jpg 1x, ./images/img3-2x.jpg 2x"
                   media="(min-width:1200px)"
-                  >
-                  <source 
-                  srcset="./images/img3-tab.jpg 1x, 
-                  ./images/img3-tab-2x.jpg 2x"
+                />
+                <source
+                  srcset="./images/img3-tab.jpg 1x, ./images/img3-tab-2x.jpg 2x"
                   media="(min-width:768px)"
-                  >
-                  <source 
-                  srcset="./images/img3-mob.jpg 1x, 
-                  ./images/img3-mob-2x.jpg 2x"
+                />
+                <source
+                  srcset="./images/img3-mob.jpg 1x, ./images/img3-mob-2x.jpg 2x"
                   media="(min-width:320px)"
-                  >
-                  <img
-                src="./images/img3-mob.jpg"
-                alt="член команды 1"
-                class="team-img"
+                />
+                <img
+                  src="./images/img3-mob.jpg"
+                  alt="член команды 1"
+                  class="team-img"
                 />
               </picture>
               <div class="team-box">
@@ -306,8 +294,8 @@
                     <a href="" class="soc-link">
                       <svg class="soc-icon" width="20" height="20">
                         <use
-                          href="./images/icons.svg/symbol-defs-omg.svg#icon-twitter">
-                      </use>
+                          href="./images/icons.svg/symbol-defs-omg.svg#icon-twitter"
+                        ></use>
                       </svg>
                     </a>
                   </li>
@@ -319,15 +307,13 @@
                         ></use>
                       </svg>
                     </a>
-                    </a>
                   </li>
                   <li class="soc-item">
                     <a href="" class="soc-link">
                       <svg class="soc-icon" width="20" height="20">
                         <use
-                          href="./images/icons.svg/symbol-defs-omg.svg#icon-linkedin">
-                        </use>
-                        </use>
+                          href="./images/icons.svg/symbol-defs-omg.svg#icon-linkedin"
+                        ></use>
                       </svg>
                     </a>
                   </li>
@@ -336,25 +322,22 @@
             </li>
             <li class="team-item">
               <picture>
-                <source 
-                  srcset="./images/img4.jpg 1x, 
-                  ./images/img4-2x.jpg 2x"
+                <source
+                  srcset="./images/img4.jpg 1x, ./images/img4-2x.jpg 2x"
                   media="(min-width:1200px)"
-                  >
-                  <source 
-                  srcset="./images/img4-tab.jpg 1x, 
-                  ./images/img4-tab-2x.jpg 2x"
+                />
+                <source
+                  srcset="./images/img4-tab.jpg 1x, ./images/img4-tab-2x.jpg 2x"
                   media="(min-width:768px)"
-                  >
-                  <source 
-                  srcset="./images/img4-mob.jpg 1x, 
-                  ./images/img4-mob-2x.jpg 2x"
+                />
+                <source
+                  srcset="./images/img4-mob.jpg 1x, ./images/img4-mob-2x.jpg 2x"
                   media="(min-width:320px)"
-                  >
-                  <img
-                src="./images/img4-mob.jpg"
-                alt="член команды 2"
-                class="team-img"
+                />
+                <img
+                  src="./images/img4-mob.jpg"
+                  alt="член команды 2"
+                  class="team-img"
                 />
               </picture>
               <div class="team-box">
@@ -374,8 +357,8 @@
                     <a href="" class="soc-link">
                       <svg class="soc-icon" width="20" height="20">
                         <use
-                          href="./images/icons.svg/symbol-defs-omg.svg#icon-twitter">
-                      </use>
+                          href="./images/icons.svg/symbol-defs-omg.svg#icon-twitter"
+                        ></use>
                       </svg>
                     </a>
                   </li>
@@ -387,15 +370,13 @@
                         ></use>
                       </svg>
                     </a>
-                    </a>
                   </li>
                   <li class="soc-item">
                     <a href="" class="soc-link">
                       <svg class="soc-icon" width="20" height="20">
                         <use
-                          href="./images/icons.svg/symbol-defs-omg.svg#icon-linkedin">
-                        </use>
-                        </use>
+                          href="./images/icons.svg/symbol-defs-omg.svg#icon-linkedin"
+                        ></use>
                       </svg>
                     </a>
                   </li>
@@ -404,25 +385,22 @@
             </li>
             <li class="team-item">
               <picture>
-                <source 
-                  srcset="./images/img5.jpg 1x, 
-                  ./images/img5-2x.jpg 2x"
+                <source
+                  srcset="./images/img5.jpg 1x, ./images/img5-2x.jpg 2x"
                   media="(min-width:1200px)"
-                  >
-                  <source 
-                  srcset="./images/img5-tab.jpg 1x, 
-                  ./images/img5-tab-2x.jpg 2x"
+                />
+                <source
+                  srcset="./images/img5-tab.jpg 1x, ./images/img5-tab-2x.jpg 2x"
                   media="(min-width:768px)"
-                  >
-                  <source 
-                  srcset="./images/img5-mob.jpg 1x, 
-                  ./images/img5-mob-2x.jpg 2x"
+                />
+                <source
+                  srcset="./images/img5-mob.jpg 1x, ./images/img5-mob-2x.jpg 2x"
                   media="(min-width:320px)"
-                  >
-                  <img
-                src="./images/img5-mob.jpg"
-                alt="член команды 3"
-                class="team-img"
+                />
+                <img
+                  src="./images/img5-mob.jpg"
+                  alt="член команды 3"
+                  class="team-img"
                 />
               </picture>
               <div class="team-box">
@@ -442,8 +420,8 @@
                     <a href="" class="soc-link">
                       <svg class="soc-icon" width="20" height="20">
                         <use
-                          href="./images/icons.svg/symbol-defs-omg.svg#icon-twitter">
-                      </use>
+                          href="./images/icons.svg/symbol-defs-omg.svg#icon-twitter"
+                        ></use>
                       </svg>
                     </a>
                   </li>
@@ -455,15 +433,13 @@
                         ></use>
                       </svg>
                     </a>
-                    </a>
                   </li>
                   <li class="soc-item">
                     <a href="" class="soc-link">
                       <svg class="soc-icon" width="20" height="20">
                         <use
-                          href="./images/icons.svg/symbol-defs-omg.svg#icon-linkedin">
-                        </use>
-                        </use>
+                          href="./images/icons.svg/symbol-defs-omg.svg#icon-linkedin"
+                        ></use>
                       </svg>
                     </a>
                   </li>
@@ -472,25 +448,22 @@
             </li>
             <li class="team-item">
               <picture>
-                <source 
-                  srcset="./images/img6.jpg 1x, 
-                  ./images/img6-2x.jpg 2x"
+                <source
+                  srcset="./images/img6.jpg 1x, ./images/img6-2x.jpg 2x"
                   media="(min-width:1200px)"
-                  >
-                  <source 
-                  srcset="./images/img6-tab.jpg 1x, 
-                  ./images/img6-tab-2x.jpg 2x"
+                />
+                <source
+                  srcset="./images/img6-tab.jpg 1x, ./images/img6-tab-2x.jpg 2x"
                   media="(min-width:768px)"
-                  >
-                  <source 
-                  srcset="./images/img6-mob.jpg 1x, 
-                  ./images/img6-mob-2x.jpg 2x"
+                />
+                <source
+                  srcset="./images/img6-mob.jpg 1x, ./images/img6-mob-2x.jpg 2x"
                   media="(min-width:320px)"
-                  >
-                  <img
-                src="./images/img6-mob.jpg"
-                alt="член команды 4"
-                class="team-img"
+                />
+                <img
+                  src="./images/img6-mob.jpg"
+                  alt="член команды 4"
+                  class="team-img"
                 />
               </picture>
               <div class="team-box">
@@ -510,8 +483,8 @@
                     <a href="" class="soc-link">
                       <svg class="soc-icon" width="20" height="20">
                         <use
-                          href="./images/icons.svg/symbol-defs-omg.svg#icon-twitter">
-                      </use>
+                          href="./images/icons.svg/symbol-defs-omg.svg#icon-twitter"
+                        ></use>
                       </svg>
                     </a>
                   </li>
@@ -523,15 +496,13 @@
                         ></use>
                       </svg>
                     </a>
-                    </a>
                   </li>
                   <li class="soc-item">
                     <a href="" class="soc-link">
                       <svg class="soc-icon" width="20" height="20">
                         <use
-                          href="./images/icons.svg/symbol-defs-omg.svg#icon-linkedin">
-                        </use>
-                        </use>
+                          href="./images/icons.svg/symbol-defs-omg.svg#icon-linkedin"
+                        ></use>
                       </svg>
                     </a>
                   </li>
@@ -547,74 +518,84 @@
       <h2 class="clients-title top-title">Постоянные клиенты</h2>
       <ul class="list clients-list">
         <li class="clients-item">
-          <a href="" class="clients-link ">
-          <svg class="client-icons" width="106" height="60">
-            <use href="./images/icons.svg/symbol-defs-omg.svg#icon-Logo">
-            </use> 
-          </svg>
-        </a>
-      </li>
-        <li class="clients-item">
-          <a href=""class="clients-link">
+          <a href="" class="clients-link">
             <svg class="client-icons" width="106" height="60">
-              <use href="./images/icons.svg/symbol-defs-omg.svg#icon-Logo-1">
-              </use>
+              <use
+                href="./images/icons.svg/symbol-defs-omg.svg#icon-Logo"
+              ></use>
             </svg>
           </a>
         </li>
         <li class="clients-item">
-          <a href=""class="clients-link">
+          <a href="" class="clients-link">
             <svg class="client-icons" width="106" height="60">
-              <use href="./images/icons.svg/symbol-defs-omg.svg#icon-Logo-2">
-              </use> 
-            </svg>            
+              <use
+                href="./images/icons.svg/symbol-defs-omg.svg#icon-Logo-1"
+              ></use>
+            </svg>
           </a>
         </li>
         <li class="clients-item">
-          <a href=""class="clients-link">
+          <a href="" class="clients-link">
             <svg class="client-icons" width="106" height="60">
-              <use href="./images/icons.svg/symbol-defs-omg.svg#icon-Logo-3">
-              </use> 
-            </svg>           
+              <use
+                href="./images/icons.svg/symbol-defs-omg.svg#icon-Logo-2"
+              ></use>
+            </svg>
           </a>
         </li>
         <li class="clients-item">
-          <a href=""class="clients-link">
+          <a href="" class="clients-link">
             <svg class="client-icons" width="106" height="60">
-              <use href="./images/icons.svg/symbol-defs-omg.svg#icon-Logo-4">
-              </use> 
-            </svg>            
+              <use
+                href="./images/icons.svg/symbol-defs-omg.svg#icon-Logo-3"
+              ></use>
+            </svg>
           </a>
         </li>
         <li class="clients-item">
-          <a href=""class="clients-link">
+          <a href="" class="clients-link">
             <svg class="client-icons" width="106" height="60">
-              <use href="./images/icons.svg/symbol-defs-omg.svg#icon-Logo-5">
-              </use> 
-            </svg>           
+              <use
+                href="./images/icons.svg/symbol-defs-omg.svg#icon-Logo-4"
+              ></use>
+            </svg>
+          </a>
+        </li>
+        <li class="clients-item">
+          <a href="" class="clients-link">
+            <svg class="client-icons" width="106" height="60">
+              <use
+                href="./images/icons.svg/symbol-defs-omg.svg#icon-Logo-5"
+              ></use>
+            </svg>
           </a>
         </li>
       </ul>
-    </section> 
+    </section>
     <!-- FOOTER -->
     <footer class="footer">
       <div class="container footer-container">
         <div class="footer-logo-container">
           <a href="./index.html" class="logo link footer-logo">
-            Web<span class="logo-footer">Studio</span></a>
+            Web<span class="logo-footer">Studio</span></a
+          >
           <address class="footer-address">
             <ul class="footer-list list">
               <li class="footer-item">
                 <a class="footer-address-link link" href="/index.html"
-                  >г. Киев, пр-т Леси Украинки, 26</a>
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
               </li>
               <li class="footer-item">
                 <a class="footer-tel link" href="mailto:info@example.com"
-                  >info@example.com</a>
+                  >info@example.com</a
+                >
               </li>
               <li class="footer-item">
                 <a class="footer-tel link" href="tel:+380991111111"
-                  >+38 099 111 11 11</a>
+                  >+38 099 111 11 11</a
+                >
               </li>
             </ul>
           </address>
@@ -626,8 +607,8 @@
               <a href="" class="footer-soc-link">
                 <svg class="footer-soc-icon" width="20" height="20">
                   <use
-                    href="./images/icons.svg/symbol-defs-omg.svg#icon-instagram"></use>
-                  </use>
+                    href="./images/icons.svg/symbol-defs-omg.svg#icon-instagram"
+                  ></use>
                 </svg>
               </a>
             </li>
@@ -635,8 +616,8 @@
               <a href="" class="footer-soc-link">
                 <svg class="footer-soc-icon" width="20" height="20">
                   <use
-                    href="./images/icons.svg/symbol-defs-omg.svg#icon-twitter">
-                  </use>
+                    href="./images/icons.svg/symbol-defs-omg.svg#icon-twitter"
+                  ></use>
                 </svg>
               </a>
             </li>
@@ -644,8 +625,8 @@
               <a href="" class="footer-soc-link">
                 <svg class="footer-soc-icon" width="20" height="20">
                   <use
-                    href="./images/icons.svg/symbol-defs-omg.svg#icon-facebook">
-                  </use>
+                    href="./images/icons.svg/symbol-defs-omg.svg#icon-facebook"
+                  ></use>
                 </svg>
               </a>
             </li>
@@ -653,8 +634,8 @@
               <a href="" class="footer-soc-link">
                 <svg class="footer-soc-icon" width="20" height="20">
                   <use
-                    href="./images/icons.svg/symbol-defs-omg.svg#icon-linkedin">
-                  </use>
+                    href="./images/icons.svg/symbol-defs-omg.svg#icon-linkedin"
+                  ></use>
                 </svg>
               </a>
             </li>
@@ -662,15 +643,21 @@
         </div>
         <form class="footer-form">
           <label class="footer-email-label">
-            <p class="footer-email-text">Подпишитесь на рассылку</p>
-            <input type="email" name="mailing list" placeholder="E-mail" class="footer-email-input">
+            <span class="footer-email-text">Подпишитесь на рассылку</span>
+            <input
+              type="email"
+              name="mailing list"
+              placeholder="E-mail"
+              class="footer-email-input"
+            />
           </label>
         </form>
-        <button type="submit" class="footer-email-button">Подписаться
+        <button type="submit" class="footer-email-button">
+          Подписаться
           <svg class="footer-button-icon" width="24" height="24">
             <use
-              href="./images/icons.svg/symbol-defs-omg.svg#icon-icon-send">
-            </use>
+              href="./images/icons.svg/symbol-defs-omg.svg#icon-icon-send"
+            ></use>
           </svg>
         </button>
       </div>
@@ -723,7 +710,7 @@
             <textarea
               class="modal-textarea"
               name="comment"
-              id=""
+              id="/"
               placeholder="Введите текст"
             ></textarea>
           </label>
@@ -734,8 +721,12 @@
               name="checkbox"
             />
             <span class="modal-checkbox-border"></span>
-              <p class="modal-checkbox-text">Соглашаюсь с рассылкой и принимаю</p>
-              <a class="modal-checkbox-treaty" href=""> Условия договора</a>
+            <span class="modal-checkbox-text"
+              >Соглашаюсь с рассылкой и принимаю
+              <a class="modal-checkbox-treaty" href=""
+                >Условия договора</a
+              ></span
+            >
           </label>
           <button type="button" class="btn">Отправить</button>
         </form>
