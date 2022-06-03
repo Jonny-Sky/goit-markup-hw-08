@@ -13,6 +13,9 @@
   @media screen and (min-width: 768px) {
     display: inline-block;
   }
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
 }
 
 .logo-footer {
@@ -37,6 +40,7 @@
     margin-left: 0;
   }
 }
+
 .footer-list {
   margin-top: 20px;
   @media screen and(max-width: 1199px) {
@@ -51,6 +55,7 @@
   }
   @media screen and (min-width: 1200px) {
     margin-left: 0px;
+    width: 231px;
   }
 }
 
@@ -96,11 +101,11 @@
   @media screen and (min-width: 768px) {
     display: inline-block;
     margin-left: 165px;
-    // margin: 65px 0 0 165px;
   }
   @media screen and (min-width: 1200px) {
     margin-left: 70px;
     margin-top: 15px;
+    display: block;
   }
 }
 
@@ -154,12 +159,19 @@
     display: flex;
     justify-content: center;
   }
+  @media screen and (min-width: 1200px) {
+    // margin-left: 93px;
+    // margin-top: 12px;
+    // display: block;
+  }
 }
 
 .footer-email-label {
   @media screen and (min-width: 1200px) {
     margin-left: 93px;
     margin-top: 12px;
+    display: flex;
+    flex-direction: column;
   }
 }
 
